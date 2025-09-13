@@ -58,7 +58,7 @@ export const QuickAddNoteModal: React.FC<QuickAddNoteModalProps> = ({ isOpen, on
 
   return (
     <div 
-        className="fixed inset-0 bg-black/70 z-40 flex items-center justify-center p-4 animate-backdrop-fade-in"
+        className="fixed inset-0 bg-black/60 z-40 flex items-center justify-center p-4 animate-backdrop-fade-in"
         onClick={onClose}
         role="dialog"
         aria-modal="true"

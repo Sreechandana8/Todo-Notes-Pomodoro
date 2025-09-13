@@ -39,8 +39,7 @@ export const PauseIcon: React.FC<{ className?: string }> = ({ className = "w-6 h
 
 export const ResetIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19.95 9A9 9 0 0 0 12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 8.2-3.35 8.8-7.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9L12 4.75 6.75 9" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
   </svg>
 );
 

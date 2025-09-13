@@ -351,7 +351,8 @@ export const TodoList: React.FC<TodoListProps> = ({ todos, setTodos }) => {
                             onDragOver={handleDragOver}
                             onDrop={(e) => handleDrop(e, todo.id)}
                             onDragEnd={handleDragEnd}
-                            className={`bg-slate-900 rounded-lg border border-slate-800 transition-all duration-200 
+                            className={`bg-slate-900 rounded-lg border border-slate-800 transition-all duration-300 ease-in-out
+                                ${todo.completed ? 'opacity-60 scale-[0.98]' : 'opacity-100 scale-100'}
                                 ${sortBy === 'default' ? 'cursor-grab' : ''}
                                 ${draggedTodoId === todo.id ? 'opacity-40' : ''}
                                 ${dropTargetId === todo.id ? 'border-t-2 border-yellow-400' : ''}

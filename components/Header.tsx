@@ -32,20 +32,22 @@ export const Header: React.FC<HeaderProps> = ({ activeView, setActiveView }) => 
         <header className="p-4 bg-slate-900/50 backdrop-blur-sm sticky top-0 z-10 border-b border-slate-800">
             <div className="container mx-auto flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-2">
                 <Logo />
-                <nav className="flex w-full justify-around sm:w-auto sm:space-x-2 bg-slate-900 p-1 rounded-lg">
-                    <NavButton onClick={() => setActiveView('dashboard')} isActive={activeView === 'dashboard'}>
-                        Dashboard
-                    </NavButton>
-                    <NavButton onClick={() => setActiveView('notes')} isActive={activeView === 'notes'}>
-                        Notes
-                    </NavButton>
-                    <NavButton onClick={() => setActiveView('pomodoro')} isActive={activeView === 'pomodoro'}>
-                        Pomodoro
-                    </NavButton>
-                    <NavButton onClick={() => setActiveView('todo')} isActive={activeView === 'todo'}>
-                        To-Do List
-                    </NavButton>
-                </nav>
+                <div className="flex items-center gap-2 w-full sm:w-auto">
+                    <nav className="flex-grow flex justify-around sm:flex-grow-0 sm:w-auto sm:space-x-2 bg-slate-900 p-1 rounded-lg">
+                        <NavButton onClick={() => setActiveView('dashboard')} isActive={activeView === 'dashboard'}>
+                            Dashboard
+                        </NavButton>
+                        <NavButton onClick={() => setActiveView('notes')} isActive={activeView === 'notes'}>
+                            Notes
+                        </NavButton>
+                        <NavButton onClick={() => setActiveView('pomodoro')} isActive={activeView === 'pomodoro'}>
+                            Pomodoro
+                        </NavButton>
+                        <NavButton onClick={() => setActiveView('todo')} isActive={activeView === 'todo'}>
+                            To-Do List
+                        </NavButton>
+                    </nav>
+                </div>
             </div>
         </header>
     );

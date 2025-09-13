@@ -90,7 +90,7 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-black font-sans">
+        <div className="min-h-screen font-sans">
             <Header activeView={activeView} setActiveView={setActiveView} />
             <main>
                 {renderActiveView()}
